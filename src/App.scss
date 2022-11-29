@@ -1,0 +1,75 @@
+.layout {
+    background: #FFF4E0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .uploadBtn {
+        width: 100%;
+        max-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        background-color: #26BAEE;
+        padding: 10px;
+        border-radius: 8px;
+        color: #FFF4E0;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #9FE8FA;
+            color: black;
+        }
+    }
+
+    .filePreview {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #73D2F3;
+        max-width: 300px;
+        height: 300px;
+        border-radius: 8px;
+        padding: 10px;
+        word-break: break-all;
+        text-align: center;
+
+        #downloadIcon {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            translate: -10px 10px;
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            background-color: white;
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        >img {
+            width: 100%;
+        }
+
+    }
+
+    .fileDescription {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        text-align: center;
+    }
+}
